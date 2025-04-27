@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.EarningsMapper">
+
+	<insert id="insert"
+		parameterType="com.example.demo.model.Earnings">
+		INSERT INTO earnings (date, shop, investment, return_money, memo)
+		VALUES (#{date,jdbcType=DATE}, #{shop}, #{investment}, #{returnMoney},
+		#{memo})
+	</insert>
+
+	<select id="findAll"
+		resultType="com.example.demo.model.Earnings">
+		SELECT * FROM earnings ORDER BY date DESC
+	</select>
+
+</mapper>

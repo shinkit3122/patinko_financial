@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>収支入力</title>
+  <link rel="stylesheet" th:href="@{/css/form.css}" />
+</head>
+<body>
+  <h1>収支入力フォーム</h1>
+  <form th:action="@{/form}" method="post">
+    <label for="date">日付:</label>
+    <input type="date" id="date" name="date" required><br>
+
+    <label for="shop">店舗名:</label>
+    <input type="text" id="shop" name="shop" required><br>
+
+    <label for="investment">投資金額（円）:</label>
+    <input type="number" id="investment" name="investment" required><br>
+
+    <label for="returnMoney">回収金額（円）:</label>
+    <input type="number" id="returnMoney" name="returnMoney" required><br>
+
+    <label for="memo">メモ:</label><br>
+    <textarea id="memo" name="memo" rows="4" cols="40"></textarea><br><br>
+
+    <button type="submit">保存</button>
+  </form>
+</body>
+</html>

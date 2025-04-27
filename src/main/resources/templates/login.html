@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ログイン - パチンコ収支管理</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+
+<body>
+	<div class="login-container">
+		<h1>パチンコ収支ログイン</h1>
+		<form th:action="@{/login}" method="post">
+			<input type="text" name="username" />
+			<input type="password" name="password" />
+			<button type="submit">ログイン</button>
+		</form>
+		<p class="register-link">
+			アカウントをお持ちでない方は <a href="/register">こちら</a>
+		</p>
+	</div>
+</body>
+
+</html>

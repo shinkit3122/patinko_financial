@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body {
+    font-family: sans-serif;
+    padding: 30px;
+    background: #f8f8f8;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+th {
+    background-color: #0275d8;
+    color: white;
+}
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0275d8;
+}
